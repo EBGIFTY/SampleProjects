@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="53.583" tests="8" skipped="0" failures="1" errors="0" timestamp="2025-06-25T18:17:46.137406181Z">
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.1" time="9.62">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "1234567" and "London" into the Search functionality.............passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.2" time="6.715">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "-------------" and "London" into the Search functionality.......passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.3" time="6.132">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "-------------" and "London1111111" into the Search functionality.passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.4" time="5.319">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Software Testing" and "Ep1111111" into the Search functionality.passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.5" time="5.834">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "A" and "L" into the Search functionality........................passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.6" time="5.357">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Nurse" and "!@#$%^&*" into the Search functionality.............passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.7" time="6.283">
+<failure type="java.lang.AssertionError" message="Expected message not found">
+<![CDATA[java.lang.AssertionError: Expected message not found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.JobsearchPage.validate_error_message(JobsearchPage.java:250)
+	at stepDefs.NhsJobSearchStepDef.Validate_the_error_message(NhsJobSearchStepDef.java:125)
+	at ✽.Validate the error message(file:///home/ebgiftygmail/eclipse-workspace/NHS/src/test/java/features/nhs_JobSearch.feature:38)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "<256-char-string>" and "London" into the Search functionality...passed
+Then Validate the error message.............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.8" time="7.748">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Nurse" and "<256-char-string>" into the Search functionality....passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
